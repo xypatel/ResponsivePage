@@ -14,7 +14,7 @@
         <!--==================== CSS ====================-->
         <link rel="stylesheet" href="assets/css/styles.css">
 
-        <title>Responsive Portfolio Website</title>
+        <title>Responsive Surprise Website</title>
     </head>
     <body>
         <!--==================== HEADER ====================-->
@@ -49,14 +49,14 @@
                         </li>
 
                         <li class="nav__item">
-                            <a href="#portfolio" class="nav__link">
-                                <i class="uil uil-scenery nav__icon"></i> Portfolio
+                            <a href="#surprise" class="nav__link">
+                                <i class="uil uil-scenery nav__icon"></i> Surprise
                             </a>
                         </li>
 
                         <li class="nav__item">
                             <a href="#contact" class="nav__link">
-                                <i class="uil uil-message nav__icon"></i> Contactme
+                                <i class="uil uil-message nav__icon"></i> Contact Me
                             </a>
                         </li>
 
@@ -119,8 +119,40 @@
             <section class="about section" id="about">
                 <h2 class="section__title">About Me</h2>
                 <span class="section__subtitle">My introduction</span>
-    
-        
+
+                <div class="about__container container grid">
+                    <img src="/assets/img/osu.png" alt="" class="about__img">
+                    <ul>
+                        <h1>Education</h1>
+                        <li><h2>Bachelors of Science: <br> Computer Science & Engineering</h2></li>
+                        <li><h2>Specialization: <br> Software Engineering</h2></li>
+                        <li><h2>Minor: <br> Business</h2></li>
+                    </ul>
+                    <img src="/assets/img/c1.png" alt="" class="about__img">
+                    <ul>
+                        <h1>Software Engineer</h1>
+                        <p>Intern -> *Associate</p>
+                        <li>Implemented distributed tracing and metrics in microservice applications</li>
+                        <li>Evaluated APM tools determining best use cases</li>
+                        <li>Documented instrumentation instructions for OpenTelemetry</li>
+                        <li> Software: Java, Spring, JavaScript, TypeScript, Angular, HTML, CSS, Docker, Docker-Compose, AWS, OpenTelemetry, Jaeger, Prometheus, Grafana, New Relic</li>
+                        <br><i>*Current Position</i>
+                    </ul>
+                    <img src="/assets/img/loeb.png" alt="" class="about__img">
+                    <ul>
+                        <h1>Information Technology</h1>
+                        <p>Intern</p>
+                        <li>Used Powershell and ADP api's to autonomously update employee information on exchange server</li>
+                        <li>Deployed a script to update all employee profile pictures daily</li>
+                        <li>Set up dev environment by replicating on-premise exchange server on an isolated machine</li>
+                        <li>Populated local Active Directory with employee data</li>
+                        <li>Optimized on-boarding and off-boarding</li>
+                        <li>Determined use cases for Mobile Device Management and Microsoft InTune</li>
+                        <li>Resolved synchronization issues in hybrid exchange environment.</li>
+
+                    </ul>
+                </div>
+
             </section>
 
             <!--==================== SKILLS ====================-->
@@ -163,6 +195,15 @@
                             <div class="skills__list grid">
                                 <div class="skills__data">
                                     <div class="skills__titles">
+                                        <i class="devicon-c-plain colored skill__icon"></i>
+                                        <h4>CLang</h4>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skills__list grid">
+                                <div class="skills__data">
+                                    <div class="skills__titles">
                                         <i class="devicon-javascript-plain colored skill__icon"></i>
                                         <h4>JavaScript</h4>
                                     </div>
@@ -173,20 +214,10 @@
                                 <div class="skills__data">
                                     <div class="skills__titles">
                                         <i class="devicon-csharp-plain colored skill__icon"></i>
-                                        <h4>C Sharp</h4>
+                                        <h4>CSharp</h4>
                                     </div>
                                 </div>
                             </div>
-
-                            <div class="skills__list grid">
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <i class="devicon-c-plain colored skill__icon"></i>
-                                        <h4>CLang</h4>
-                                    </div>
-                                </div>
-                            </div>
-
 
                             <div class="skills__list grid">
                                 <div class="skills__data">
@@ -357,7 +388,7 @@
                             <div class="skills__list grid">
                                 <div class="skills__data">
                                     <div class="skills__titles">
-                                        <i class="devicon-flask-original-wordmark colored skill__icon"></i>
+                                        <i class="devicon-flask-original-wordmark colored skill__icon" style="color: gray;"></i>
                                         <h4>Flask</h4>
                                     </div>
                                 </div>
@@ -619,8 +650,8 @@
 
             </section>
 
-            <!--==================== PORTFOLIO ====================-->
-            <section class="portfolio section" id="portfolio">
+            <!--==================== Surprise ====================-->
+            <section class="surprise section" id="surprise">
                 
 
             </section>
@@ -687,7 +718,7 @@
                         </div>
 
                         <div>
-                            <input type="submit" value="Send Message" style="">                                
+                            <input type="submit" value="Send Message" style="color: white;">                                
                         </div>
                     </form>
                 </div>

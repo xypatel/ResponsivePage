@@ -353,9 +353,9 @@ img{
     background-color: var(--first-color);
     color: #FFFF;
     padding: 1rem;
-    border-radius: .5rem;
+    border-radius: 1rem;
     font-weight: var(--font-medium);
-
+    box-shadow: 0 19px 38px rgba(0,0,0,.25);
 }
 
 .button:hover {
@@ -400,7 +400,26 @@ img{
 }
 
 /*==================== ABOUT ====================*/
+.about__img {
+    width: 100px;
+    border-radius: .5rem;
+    justify-self: center;
+    align-self: center;
+}
 
+.about__container ul {
+    background: var(--container-color);
+    box-shadow: 0 19px 38px rgba(0,0,0,.15);
+    border-radius: 1rem;
+    padding: 1rem 5rem;
+  }
+
+  .about__container li{
+      padding-top: .5rem;
+      font-size: .5rem;
+      list-style-type: circle;
+      color: var(--title-color);
+  }
 
 /*==================== SKILLS ====================*/
 .skills__container {
