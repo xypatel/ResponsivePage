@@ -37,7 +37,7 @@
     --font-medium: 500;
     --font-semi-bold: 600;
 
-    /*========== Margenes Bottom ==========*/
+    /*========== Margins Bottom ==========*/
     /* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
     --mb-0-25: .25rem;
     --mb-0-5: .5rem;
@@ -566,15 +566,57 @@ img{
     visibility: visible;
 }
 
-/*==================== PORTFOLIO ====================*/
+/*==================== Surprise ====================*/
+.container {
+    .swiper-container {
+      .swiper-wrapper {
+        .swiper-slide {
+          .card-image {
+            background: $color-white;
+            border: none;
+            outline: none;
+            box-shadow: $box-shadow;
+            border-radius: 2px;
 
+            img {
+              display: block;
+              position: relative;
+              left: 0;
+              bottom: 0;
+              width: 100%;
+              height: auto;
+              object-fit: cover;
+            }
+          }
+        }
+      }
 
-/*==================== PROJECT IN MIND ====================*/
+      .swiper-pagination {
+        &-bullet {
+          opacity: 0.8;
+          background: $color-black;
+          &-active {
+            background: $color-white;
+          }
+        }
+      }
 
+      .swiper-button-next,
+      .swiper-button-prev {
+        background-image: none;
+        background-size: 0;
+        background-repeat: no-repeat;
+        background-position: 0;
+        margin-top: -1rem;
 
-/*==================== TESTIMONIAL ====================*/
-
-
+        .arrow-icon {
+          font-size: 2rem;
+          color: $color-white;
+        }
+      }
+    }
+  }
+}
 /*==================== CONTACT ME ====================*/
 .contact__container {
     row-gap: 3rem;
