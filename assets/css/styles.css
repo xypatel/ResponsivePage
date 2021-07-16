@@ -407,6 +407,10 @@ img{
     align-self: center;
 }
 
+.about__container ul:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0, .30)
+}
+
 .about__container ul {
     background: var(--container-color);
     box-shadow: 0 19px 38px rgba(0,0,0,.15);
