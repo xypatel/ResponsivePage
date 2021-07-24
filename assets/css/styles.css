@@ -1056,3 +1056,26 @@ input[type=submit] {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
+.animation-wrapper {
+    overflow-x: hidden;
+    width: auto;
+}
+
+.sphere-animation {
+  width: 18rem;
+  height: 18rem;
+}
+
+.sphere path {
+  fill: url(#sphereGradient);
+  stroke-width: 1px;
+  stroke: rgba(80,80,80,.35);
+  backface-visibility: hidden;
+}
+
+@media (min-width: 500px) {
+  .sphere path {
+    stroke-width: 1px;
+  }
+}
