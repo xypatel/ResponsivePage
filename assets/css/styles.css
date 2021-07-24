@@ -7,7 +7,7 @@
 
     /*========== Colors ==========*/
     /* Change favorite color */
-    --hue-color: 215; 
+    --hue-color: 225; 
 
     /* HSL color mode */
     --first-color: hsl(var(--hue-color) , 69%, 61%);
@@ -304,6 +304,10 @@ img{
 .home__title {
     font-size: var(--big-font-size);
 }
+
+.home__title span {
+    display: inline-block;
+  }
 
 .home__subtitle {
     font-size: var(--h3-font-size);
