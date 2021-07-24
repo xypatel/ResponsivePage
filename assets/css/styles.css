@@ -112,6 +112,7 @@ html {
 }
 
 body{
+    background-image: url("https://www.transparenttextures.com/patterns/fake-brick.png");
     margin: 0 0 var(--header-height) 0;
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
