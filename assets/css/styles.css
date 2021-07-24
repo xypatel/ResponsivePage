@@ -1057,14 +1057,17 @@ input[type=submit] {
     }
 }
 
+
+/*==================== Animated Sphere ====================*/
+
 .animation-wrapper {
     overflow-x: hidden;
     width: auto;
 }
 
 .sphere-animation {
-  width: 18rem;
-  height: 18rem;
+  width: 20rem;
+  height: 20rem;
 }
 
 .sphere path {
