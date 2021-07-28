@@ -1120,7 +1120,7 @@ input[type=submit] {
     position: absolute;
     color: whitesmoke;
     letter-spacing: 1px;
-    text-shadow: 4px 0 10px rgba(0, 0, 0, 0.13);
+    text-shadow: 4px 0 1px rgba(0, 0, 0, 0.13);
   }
   
   .layer:nth-child(1):after {
