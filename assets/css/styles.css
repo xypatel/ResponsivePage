@@ -357,10 +357,13 @@ img{
     display: inline-block;
     background-color: var(--first-color);
     color: #FFFF;
-    padding: 1rem;
-    border-radius: 1rem;
+    padding: .6rem;
+    border-radius: .5rem;
     font-weight: var(--font-medium);
-    box-shadow: 0 19px 38px rgba(0,0,0,.25);
+    border-style:solid;
+    border-width: 2px;
+    border-color: dodgerblue;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.25);
 }
 
 .button:hover {
