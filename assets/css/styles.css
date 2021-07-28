@@ -1209,7 +1209,6 @@ input[type=submit] {
   
   .layer:nth-child(n+11):after {
     -webkit-text-stroke: 15px dodgerblue;
-    text-shadow: 6px 0 6px #00366b, 5px 5px 5px #002951, 0 6px 6px #00366b;
   }
   
   .layer:nth-child(n+12):after {
