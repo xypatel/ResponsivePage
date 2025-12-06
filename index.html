@@ -1,895 +1,350 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <!--==================== Animate on Scroll ====================-->       
-        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
-        <!--==================== UNICONS ====================-->       
-        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.12.0/devicon.min.css">
-
-        <link rel="icon" href="assets/img/osu.png">
-
-        <!--==================== CSS ====================-->
-        <link rel="stylesheet" href="assets/css/styles.css">
-
-        <title>Axay</title>
-    </head>
-    <body>
-        <!--==================== HEADER ====================-->
-        <header class="header" id="header">
-            <nav class="nav container">
-                <a href="#" class="nav__logo">Axay</a>
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list grid">
-
-                        <li class="nav__item">
-                            <a href="#home" class="nav__link">
-                                <i class="uil uil-estate nav__icon"></i> Home
-                            </a>
-                        </li>
-
-                        <li class="nav__item">
-                            <a href="#about" class="nav__link">
-                                <i class="uil uil-user nav__icon"></i> About 
-                            </a>
-                        </li>
-
-                        <li class="nav__item">
-                            <a href="#skills" class="nav__link">
-                                <i class="uil uil-laptop-cloud nav__icon"></i> Tech
-                            </a>
-                        </li>
-
-                        <li class="nav__item">
-                            <a href="#projects" class="nav__link">
-                                <i class="uil uil-code-branch nav__icon"></i> Projects
-                            </a>
-                        </li>
-
-                        <li class="nav__item">
-                            <a href="#surprise" class="nav__link">
-                                <i class="uil uil-scenery nav__icon"></i> Surprise
-                            </a>
-                        </li>
-
-                        <li class="nav__item">
-                            <a href="#contact" class="nav__link">
-                                <i class="uil uil-message nav__icon"></i> Contact Me
-                            </a>
-                        </li>
-
-                    </ul>
-                    <i class="uil uil-times nav__close" id="nav-close"></i>
-                </div>
-                
-                <div class="nav__btns">
-
-                    <!-- Theme change button -->
-
-                    <i class="uil uil-moon change-theme" id="theme-button"></i>
-
-                    <div class="nav__toggle" id="nav-toggle">
-                        <i class="uil uil-apps"></i>
-                    </div>
-                </div>
-            </nav>
-        </header>
-
-        <!--==================== MAIN ====================-->
-        <main class="main">
-            <!--==================== HOME ====================-->
-            <section class="home section" id="home">
-                <div class="home__container container grid">
-                    <div class="home__content grid">
-                        <div class="home__social" data-aos="zoom-in-right" data-aos-duration="1000">
-                            <a href="http://linkedin.com/in/axay-patel" target="_blank" class="home__social-icon">
-                                <i class="uil uil-linkedin nav"></i>
-                            </a>
-                            <a href="http://github.com/xypatel" target="_blank" class="home__social-icon">
-                                <i class="uil uil-github"></i>
-                            </a>
-                        </div>
-    
-                        <div class="home__img" data-aos="zoom-out" data-aos-duration="1000">
-                            <div class="animation-wrapper">
-                                <div class="sphere-animation">
-                                  <svg class="sphere" viewBox="0 0 440 440" stroke="rgba(80,80,80,.35)">
-                                    <defs>
-                                      <linearGradient id="sphereGradient" x1="5%" x2="5%" y1="0%" y2="15%">
-                                        <stop stop-color="#1B44A6" offset="0%"/>
-                                        <stop stop-color="#4485ED" offset="50%"/>
-                                        <stop stop-color="#1B44A6" offset="100%"/>
-                                      </linearGradient>
-                                    </defs>
-                                    <path d="M361.604 361.238c-24.407 24.408-51.119 37.27-59.662 28.727-8.542-8.543 4.319-35.255 28.726-59.663 24.408-24.407 51.12-37.269 59.663-28.726 8.542 8.543-4.319 35.255-28.727 59.662z"/>
-                                    <path d="M360.72 360.354c-35.879 35.88-75.254 54.677-87.946 41.985-12.692-12.692 6.105-52.067 41.985-87.947 35.879-35.879 75.254-54.676 87.946-41.984 12.692 12.692-6.105 52.067-41.984 87.946z"/>
-                                    <path d="M357.185 356.819c-44.91 44.91-94.376 68.258-110.485 52.149-16.11-16.11 7.238-65.575 52.149-110.485 44.91-44.91 94.376-68.259 110.485-52.15 16.11 16.11-7.239 65.576-52.149 110.486z"/>
-                                    <path d="M350.998 350.632c-53.21 53.209-111.579 81.107-130.373 62.313-18.794-18.793 9.105-77.163 62.314-130.372 53.209-53.21 111.579-81.108 130.373-62.314 18.794 18.794-9.105 77.164-62.314 130.373z"/>
-                                    <path d="M343.043 342.677c-59.8 59.799-125.292 91.26-146.283 70.268-20.99-20.99 10.47-86.483 70.269-146.282 59.799-59.8 125.292-91.26 146.283-70.269 20.99 20.99-10.47 86.484-70.27 146.283z"/>
-                                    <path d="M334.646 334.28c-65.169 65.169-136.697 99.3-159.762 76.235-23.065-23.066 11.066-94.593 76.235-159.762s136.697-99.3 159.762-76.235c23.065 23.065-11.066 94.593-76.235 159.762z"/>
-                                    <path d="M324.923 324.557c-69.806 69.806-146.38 106.411-171.031 81.76-24.652-24.652 11.953-101.226 81.759-171.032 69.806-69.806 146.38-106.411 171.031-81.76 24.652 24.653-11.953 101.226-81.759 171.032z"/>
-                                    <path d="M312.99 312.625c-73.222 73.223-153.555 111.609-179.428 85.736-25.872-25.872 12.514-106.205 85.737-179.428s153.556-111.609 179.429-85.737c25.872 25.873-12.514 106.205-85.737 179.429z"/>
-                                    <path d="M300.175 299.808c-75.909 75.909-159.11 115.778-185.837 89.052-26.726-26.727 13.143-109.929 89.051-185.837 75.908-75.908 159.11-115.778 185.837-89.051 26.726 26.726-13.143 109.928-89.051 185.836z"/>
-                                    <path d="M284.707 284.34c-77.617 77.617-162.303 118.773-189.152 91.924-26.848-26.848 14.308-111.534 91.924-189.15C265.096 109.496 349.782 68.34 376.63 95.188c26.849 26.849-14.307 111.535-91.923 189.151z"/>
-                                    <path d="M269.239 267.989c-78.105 78.104-163.187 119.656-190.035 92.807-26.849-26.848 14.703-111.93 92.807-190.035 78.105-78.104 163.187-119.656 190.035-92.807 26.849 26.848-14.703 111.93-92.807 190.035z"/>
-                                    <path d="M252.887 252.52C175.27 330.138 90.584 371.294 63.736 344.446 36.887 317.596 78.043 232.91 155.66 155.293 233.276 77.677 317.962 36.521 344.81 63.37c26.85 26.848-14.307 111.534-91.923 189.15z"/>
-                                    <path d="M236.977 236.61C161.069 312.52 77.867 352.389 51.14 325.663c-26.726-26.727 13.143-109.928 89.052-185.837 75.908-75.908 159.11-115.777 185.836-89.05 26.727 26.726-13.143 109.928-89.051 185.836z"/>
-                                    <path d="M221.067 220.7C147.844 293.925 67.51 332.31 41.639 306.439c-25.873-25.873 12.513-106.206 85.736-179.429C200.6 53.786 280.931 15.4 306.804 41.272c25.872 25.873-12.514 106.206-85.737 179.429z"/>
-                                    <path d="M205.157 204.79c-69.806 69.807-146.38 106.412-171.031 81.76-24.652-24.652 11.953-101.225 81.759-171.031 69.806-69.807 146.38-106.411 171.031-81.76 24.652 24.652-11.953 101.226-81.759 171.032z"/>
-                                    <path d="M189.247 188.881c-65.169 65.169-136.696 99.3-159.762 76.235-23.065-23.065 11.066-94.593 76.235-159.762s136.697-99.3 159.762-76.235c23.065 23.065-11.066 94.593-76.235 159.762z"/>
-                                    <path d="M173.337 172.971c-59.799 59.8-125.292 91.26-146.282 70.269-20.991-20.99 10.47-86.484 70.268-146.283 59.8-59.799 125.292-91.26 146.283-70.269 20.99 20.991-10.47 86.484-70.269 146.283z"/>
-                                    <path d="M157.427 157.061c-53.209 53.21-111.578 81.108-130.372 62.314-18.794-18.794 9.104-77.164 62.313-130.373 53.21-53.209 111.58-81.108 130.373-62.314 18.794 18.794-9.105 77.164-62.314 130.373z"/>
-                                    <path d="M141.517 141.151c-44.91 44.91-94.376 68.259-110.485 52.15-16.11-16.11 7.239-65.576 52.15-110.486 44.91-44.91 94.375-68.258 110.485-52.15 16.109 16.11-7.24 65.576-52.15 110.486z"/>
-                                    <path d="M125.608 125.241c-35.88 35.88-75.255 54.677-87.947 41.985-12.692-12.692 6.105-52.067 41.985-87.947C115.525 43.4 154.9 24.603 167.592 37.295c12.692 12.692-6.105 52.067-41.984 87.946z"/>
-                                    <path d="M109.698 109.332c-24.408 24.407-51.12 37.268-59.663 28.726-8.542-8.543 4.319-35.255 28.727-59.662 24.407-24.408 51.12-37.27 59.662-28.727 8.543 8.543-4.319 35.255-28.726 59.663z"/>
-                                  </svg>
-                                </div>
-                              </div>
-                        </div>
-    
-                        <div class="home__data" data-aos="zoom-in" data-aos-duration="1000">
-                            <div class="stage">
-                                <div class="layer"></div>
-                                <div class="layer"></div>
-                                <div class="layer"></div>
-                                <div class="layer"></div>
-                                <div class="layer"></div>
-                                <div class="layer"></div>
-                                <div class="layer"></div>
-                                <div class="layer"></div>
-                                <div class="layer"></div>
-                                <div class="layer"></div>
-                                <div class="layer"></div>
-                                <div class="layer"></div>
-                                <div class="layer"></div>
-                                <div class="layer"></div>
-                                <div class="layer"></div>
-                                <div class="layer"></div>
-                                <div class="layer"></div>
-                                <div class="layer"></div>
-                                <div class="layer"></div>
-                                <div class="layer"></div>
-                              </div>
-                            <h3 class="home__subtitle">Software Engineer</h3>
-                            <p class="home__description">B.S Computer Science & Engineering, Business minor</p>
-                            <a href="#contact" class="button button-flex">
-                                Contact Me <i class="uil uil-message button__icon"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="home__scroll">
-                        <a href="#about" class="home__scroll-button button--flex">
-                            <i class="uil uil-mouse-alt-2 home__scroll-mouse"></i>
-                            <span class="home__scroll-name">Scroll down</span>
-                            <i class="uil uil-arrow-down home__scroll-arrow"></i>
-                        </a>
-                    </div>
-                </div>
-            </section>
-
-            <!--==================== ABOUT ====================-->
-            <section class="about section" id="about">
-                <h2 class="section__title">About Me</h2>
-                <span class="section__subtitle">My introduction</span>
-
-                <div class="about__container container grid">
-                    <img src="assets/img/osu.png" alt="" class="about__img" data-aos="fade-right">
-                    <ul data-aos="flip-right" data-aos-duration="1000">
-                        <h1>Education</h1>
-                        <li><h2>Bachelors of Science: <br> Computer Science & Engineering</h2></li>
-                        <li><h2>Specialization: <br> Software Engineering <br> Information Security </h2></li>
-                        <li><h2>Minor: <br> Business</h2></li>
-                    </ul>
-                    <img src="assets/img/c1.png" alt="" class="about__img" data-aos="fade-right">
-                    <ul data-aos="flip-right" data-aos-duration="1000">
-                        <h1>Software Engineer</h1>
-                        <p>Intern -> *Associate</p>
-                        <li>Implemented distributed tracing and metrics in microservice applications</li>
-                        <li>Evaluated APM tools determining best use cases</li>
-                        <li>Documented instrumentation instructions for OpenTelemetry</li>
-                        <li> Software: Java, Spring, JavaScript, TypeScript, Angular, HTML, CSS, Docker, Docker-Compose, AWS, OpenTelemetry, Jaeger, Prometheus, Grafana, New Relic</li>
-                        <br><i>*Current Position</i>
-                    </ul>
-                    <img src="assets/img/loeb.png" alt="" class="about__img" data-aos="fade-right">
-                    <ul data-aos="flip-right" data-aos-duration="1000">
-                        <h1>Information Technology</h1>
-                        <p>Intern</p>
-                        <li>Used Powershell and ADP api's to autonomously update employee information on exchange server</li>
-                        <li>Deployed a script to update all employee profile pictures daily</li>
-                        <li>Set up dev environment by replicating on-premise exchange server on an isolated machine</li>
-                        <li>Populated local Active Directory with employee data</li>
-                        <li>Optimized on-boarding and off-boarding</li>
-                        <li>Determined use cases for Mobile Device Management and Microsoft InTune</li>
-                        <li>Resolved synchronization issues in hybrid exchange environment.</li>
-
-                    </ul>
-                </div>
-
-            </section>
-
-            <!--==================== SKILLS ====================-->
-            <section class="skills section" id="skills" >
-                <h2 class="section__title">Technologies</h2>
-                <span class="section__subtitle">I have worked with</span>
-    
-                <div class="skills__container container grid" data-aos="zoom-in" data-aos-duration="1000">
-                    <div>
-                        <!--==================== SKILLS 1 ====================-->
-                        <div class="skills__content skills__close">
-                            <div class="skills__header">
-                                <i class="uil uil-brackets-curly skills__icon"></i>
-    
-                                <div>
-                                    <h1 class="skills__title">Programming Languages</h1>
-                                </div>
-    
-                                <i class="uil uil-angle-down skills__arrow"></i>
-                            </div>
-
-                            <div class="skills__list grid">
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <i class="devicon-java-plain-wordmark colored skill__icon"></i>
-                                        <h4>Java</h4>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="skills__list grid">
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <i class="devicon-go-plain colored skill__icon"  style="color: turquoise;"></i>
-                                        <h4>GoLang</h4>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="skills__list grid">
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <i class="devicon-c-plain colored skill__icon"></i>
-                                        <h4>CLang</h4>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="skills__list grid">
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <i class="devicon-javascript-plain colored skill__icon"></i>
-                                        <h4>JavaScript</h4>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="skills__list grid">
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <i class="devicon-csharp-plain colored skill__icon"></i>
-                                        <h4>CSharp</h4>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="skills__list grid">
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <i class="devicon-python-plain-wordmark colored skill__icon"></i>
-                                        <h4>Python</h4>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="skills__list grid">
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <i class="devicon-ruby-plain-wordmark colored skill__icon"></i>
-                                        <h4>Ruby</h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!--==================== SKILLS 2 ====================-->
-                        <div class="skills__content skills__close">
-                            <div class="skills__header">
-                                <i class="uil uil-database skills__icon"></i>    
-                                <div>
-                                    <h1 class="skills__title">Relational Database Management Systems</h1>
-                                </div>
-    
-                                <i class="uil uil-angle-down skills__arrow"></i>
-                            </div>
-
-                            <div class="skills__list grid">
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <i class="devicon-mysql-plain-wordmark colored skill__icon"></i>
-                                        <h4>MySql</h4>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="skills__list grid">
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <i class="devicon-postgresql-plain colored skill__icon"></i>
-                                        <h4>PostgreSQL</h4>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="skills__list grid">
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <i class="devicon-microsoftsqlserver-plain-wordmark colored skill__icon"></i>
-                                        <h4>Microsft SQL Server</h4>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="skills__list grid">
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <i class="devicon-mongodb-plain-wordmark colored skill__icon"></i>
-                                        <h4>MongoDB</h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!--==================== SKILLS 3 ====================-->
-                        <div class="skills__content skills__close">
-                            <div class="skills__header">
-                                <i class="uil uil-clouds skills__icon"></i>
-                                <div>
-                                    <h1 class="skills__title">Infrastructure</h1>
-                                </div>
-    
-                                <i class="uil uil-angle-down skills__arrow"></i>
-                            </div>
-                         
-                            <div class="skills__list grid">
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <i class="devicon-docker-plain-wordmark colored skill__icon"></i>
-                                        <h4>Docker</h4>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <div class="skills__list grid">
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <i class="devicon-amazonwebservices-plain-wordmark colored skill__icon"></i>
-                                        <h4>Amazon Web Services</h4>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="skills__list grid">
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <i class="devicon-heroku-plain-wordmark colored skill__icon"></i>
-                                        <h4>Heroku</h4>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="skills__list grid">
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <i class="uil uil-microsoft skill__icon" style="color: dodgerblue;"></i>
-                                        <h4>Microsoft Azure</h4>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="skills__list grid">
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <i class="uil uil-cube skill__icon"></i>
-                                        <h4>VirtualBox</h4>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <!--==================== SKILLS 4 ====================-->
-                        <div class="skills__content skills__close">
-                            <div class="skills__header">
-                                <i class="uil uil-arrow skills__icon"></i>
-                                <div>
-                                    <h1 class="skills__title">Frameworks</h1>
-                                </div>
-    
-                                <i class="uil uil-angle-down skills__arrow"></i>
-                            </div>
-
-                            <div class="skills__list grid">
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <i class="devicon-spring-plain-wordmark colored skill__icon"></i>
-                                        <h4>Spring</h4>
-                                    </div>
-                                </div>
-                            </div>
-                         
-                            <div class="skills__list grid">
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <i class="devicon-express-original colored skill__icon"></i>
-                                        <h4>Express.js</h4>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <div class="skills__list grid">
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <i class="devicon-angularjs-plain colored skill__icon"></i>
-                                        <h4>Angular.js</h4>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="skills__list grid">
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <i class="devicon-django-plain-wordmark colored skill__icon"></i>
-                                        <h4>Django</h4>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="skills__list grid">
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <i class="devicon-flask-original-wordmark colored skill__icon" style="color: gray;"></i>
-                                        <h4>Flask</h4>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                        <!--==================== SKILLS 5 ====================-->
-                        <div class="skills__content skills__close">
-                            <div class="skills__header">
-                                <i class="uil uil-desktop-alt skills__icon"></i>
-                                <div>
-                                    <h1 class="skills__title">Tools</h1>
-                                </div>
-    
-                                <i class="uil uil-angle-down skills__arrow"></i>
-                            </div>
-
-                            <div class="skills__list grid">
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <i class="devicon-apple-original colored skill__icon" style="color: gray;"></i>
-                                        <h4>MacOS</h4>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="skills__list grid">
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <i class="devicon-bash-plain colored skill__icon" style="color: gray;"></i>
-                                        <h4>Bash</h4>
-                                    </div>
-                                </div>
-                            </div>
-    
-                            <div class="skills__list grid">
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <i class="devicon-html5-plain-wordmark colored skill__icon"></i>
-                                        <h4>HyperText Markup Language</h4>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="skills__list grid">
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <i class="devicon-css3-plain-wordmark colored skill__icon"></i>
-                                        <h4>Cascading Style Sheets</h4>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="skills__list grid">
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <i class="devicon-linux-plain colored skill__icon" style="color:gold;"></i>
-                                        <h4>Linux</h4>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="skills__list grid">
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <i class="devicon-vscode-plain-wordmark colored skill__icon"></i>
-                                        <h4>Visual Studio Code</h4>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="skills__list grid">
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <i class="devicon-android-plain colored skill__icon"></i>
-                                        <h4>Android Studio</h4>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="skills__list grid">
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <i class="devicon-intellij-plain colored skill__icon"></i>
-                                        <h4>Intellij</h4>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="skills__list grid">
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <i class="devicon-visualstudio-plain colored skill__icon"></i>
-                                        <h4>Visual Studio</h4>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="skills__list grid">
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <i class="fab fa-unity  skill__icon"></i>
-                                        <h4>Unity</h4>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="skills__list grid">
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <i class="devicon-matlab-plain colored  skill__icon"></i>
-                                        <h4>MatLab</h4>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="skills__list grid">
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <i class="devicon-jupyter-plain-wordmark colored skill__icon"></i>
-                                        <h4>Jupyter Notebooks</h4>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="skills__list grid">
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <i class="devicon-raspberrypi-line colored skill__icon"></i>
-                                        <h4>Rasberry Pi</h4>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="skills__list grid">
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <i class="devicon-trello-plain-wordmark colored skill__icon"></i>
-                                        <h4>Trello</h4>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="skills__list grid">
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <i class="devicon-google-plain-wordmark colored skill__icon"></i>
-                                        <h4>Google Workspace</h4>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
-    
-            </section>
-
-            <!--==================== projects ====================-->
-            <section class="projects section" id="projects">
-                <h2 class="section__title">Projects</h2>    
-                <span class="section__subtitle"></span>
-                <div class="projects__container container grid">
-            <!--==================== projects 1 ====================-->  
-            <div class="projects__content" data-aos="zoom-out"data-aos-duration="1000">
-                <div>
-
-                    <div class="projects__icon">
-                        <i class="devicon-nodejs-plain-wordmark colored "></i>
-                        <i class="devicon-amazonwebservices-plain-wordmark colored"></i>
-                        <i class="devicon-mocha-plain colored"></i>
-                        <i class="devicon-mongodb-plain-wordmark colored"></i>
-                    </div>
-
-
-                    <h3 class="projects__title">Near Field Communication Exploitation</h3>
-                </div>
- 
-                    <a href="http://github.com/xypatel/NFCExploitation" target="_blank" class="projects__repo">
-                        <i class="uil uil-github"></i>
-                        <span style="font-size: 1.5rem;">Code</span>
-                    </a>
-            </div>  
-            
-            <!--==================== projects 2 ====================-->  
-            <div class="projects__content" data-aos="zoom-out"data-aos-duration="1000">
-                <div>
-
-                    <div class="projects__icon">
-                        <i class="devicon-python-plain-wordmark colored "></i>
-                        <i class="devicon-jupyter-plain-wordmark colored"></i>
-                        <i class="devicon-thealgorithms-plain colored"></i>
-
-                    </div>
-
-
-                    <h3 class="projects__title">Health Tweets<br>Text Mining</h3>
-                </div>
- 
-                    <a href="https://github.com/xypatel/HealthTweetsTextMining" target="_blank" class="projects__repo">
-                        <i class="uil uil-github"></i>
-                        <span style="font-size: 1.5rem;">Code</span>
-                    </a>
-            </div>  
-    
-            <!--==================== projects 3 ====================-->  
-            <div class="projects__content" data-aos="zoom-out"data-aos-duration="1000">
-                <div>
-                    <div class="projects__icon">
-                        <i class="devicon-csharp-plain colored"></i>
-                        <i class="fab fa-unity"></i>
-                        <i class="devicon-trello-plain-wordmark colored"></i>
-                    </div>
-
-                    <h3 class="projects__title">Legend of Zelda<br>Unity Clone</h3>
-                </div>
-                
-                <a href="https://github.com/GhostSpite/ZeldaUnity" target="_blank" class="projects__repo">
-                    <i class="uil uil-github"></i>
-                    <span style="font-size: 1.5rem;">Code</span>
-                </a>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axay Patel - Senior Software Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="../assets/img/osu.png">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">AP</a>
+            <div class="nav-links">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#contact" class="nav-link">Contact</a>
             </div>
+            <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
 
-            <div class="projects__content" data-aos="zoom-out"data-aos-duration="1000">
-                <div>
-
-                    <div class="projects__icon">
-                        <i class="devicon-java-plain-wordmark colored"></i>
-                        <i class="devicon-android-plain colored"></i>
-                        <i class="devicon-gradle-plain-wordmark" style="color: seagreen;"></i>
-                    </div>
-
-
-                    <h3 class="projects__title">Pet Tracker<br> Mobile App</h3>
-                </div>
- 
-                    <a href="https://github.com/saumyah/PetTrackerApp" target="_blank" class="projects__repo">
-                        <i class="uil uil-github"></i>
-                        <span style="font-size: 1.5rem;">Code</span>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="hero-greeting">Hi, I'm</p>
+                <h1 class="hero-name">Axay Patel</h1>
+                <h2 class="hero-title">Senior Software Engineer</h2>
+                <p class="hero-description">
+                    Specializing in distributed systems, cloud architecture, and event-driven microservices. 
+                    Building scalable solutions at Capital One.
+                </p>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                    <a href="../assets/pdf/Alexa-Cv.pdf" target="_blank" class="btn btn-secondary">
+                        <i class="fas fa-download"></i> Resume
                     </a>
-            </div>  
-            
-            <div class="projects__content" data-aos="zoom-out"data-aos-duration="1000">
-                <div>
-
-                    <div class="projects__icon">
-                        <i class="devicon-python-plain-wordmark colored"></i>
-                        <i class="devicon-flask-original"></i>
-                        <i class="devicon-microsoftsqlserver-plain-wordmark" style="color: steelblue;"></i>
-                    </div>
-
-
-                    <h3 class="projects__title">P.o.P. Key Semantics for JWT</h3>
                 </div>
- 
-                    <a href="https://github.com/jhensal33/infosec" target="_blank" class="projects__repo">
-                        <i class="uil uil-github"></i>
-                        <span style="font-size: 1.5rem;">Code</span>
+                <div class="social-links">
+                    <a href="https://linkedin.com/in/Axay-Patel" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
                     </a>
-            </div>  
-
-            </section>
-
-            <!--==================== Surprise ====================-->
-            <section class="surprise section" id="surprise">
-                <div class="container">
-                    <div class="swiper">
-                      <div class="swiper-wrapper">
-
-                        <div class="swiper-slide">
-                            <div class="card-image">
-                              <img src="assets/img/trp3.jpeg" alt="Image Slider">
-                            </div>
-                          </div>
-  
-
-                        <div class="swiper-slide">
-                            <div class="card-image">
-                              <img src="assets/img/trp2.jpeg" alt="Image Slider">
-                            </div>
-                          </div>
-  
-
-                        <div class="swiper-slide">
-                          <div class="card-image">
-                            <img src="assets/img/gogl.jpeg" alt="Image Slider">
-                          </div>
-                        </div>
-
-
-                        <div class="swiper-slide">
-                          <div class="card-image">
-                            <img src="assets/img/trp1.jpeg" alt="Image Slider">
-                          </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                          <div class="card-image">
-                            <img src="assets/img/cupertino.jpeg" alt="Image Slider">
-                          </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                          <div class="card-image">
-                            <img src="assets/img/trp4.jpeg" alt="Image Slider">
-                          </div>
-                        </div>
-                        <div class="swiper-slide">
-                          <div class="card-image">
-                            <img src="assets/img/trp5.jpeg" alt="Image Slider">
-                          </div>
-                        </div>
-                      </div>
-                      <!-- Add Pagination -->
-                      <div class="swiper-pagination"></div>
-                      <!-- Add Scrollbar -->
-                      <div class="swiper-button-next">
-                        <i class="fas fa-chevron-circle-right arrow-icon"></i>
-                      </div>
-                      <div class="swiper-button-prev">
-                        <i class="fas fa-chevron-circle-left arrow-icon"></i>
-                      </div>
-
-                    </div>
-                  </div>
-
-            </section>
-
-            <!--==================== CONTACT ME ====================-->
-            <section class="contact section" id="contact" data-aos="zoom-in">
-                <h2 class="section__title">Contact me</h2>
-                <span class="section__subtitle">Get in touch</span>
-                <div class="contact__container container grid">
-                    <div>
-    
-                        <div class="contact__information">
-                            <i class="uil uil-envelope contact__icon"></i>
-    
-                            <div>
-                                <h3 class="contact__title">E-mail</h3>
-                                <span class="contatc__subtitle">Patel.axay16@live.com</span>
-                            </div>
-                        </div>
-    
-                        <div class="contact__information">
-                            <i class="uil uil-map-marker contact__icon"></i>
-    
-                            <div>
-                                <h3 class="contact__title">Location</h3>
-                                <span class="contatc__subtitle">Dallas, TX</span>
-                            </div>
-                        </div>
-                    </div>
-    
-                    <form action="mailto:patel.axay16@live.com" class="contact__form grid">
-                        <div class="contact__inputs grid">
-                            <div class="contact__content">
-                                <label for="" class="contact__label">Name</label>
-                                <input type="text" class="contact__input">
-                            </div>
-    
-                            <div class="contact__content">
-                                <label for="" class="contact__label">E-mail</label>
-                                <input type="email" class="contact__input">
-                            </div>
-                        </div>
-    
-                        <div class="contact__content">
-                            <label for="" class="contact__label">Company</label>
-                            <input type="text" class="contact__input">
-                        </div>
-    
-                        <div class="contact__content">
-                            <label for="" class="contact__label">Message</label>
-                            <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
-                        </div>
-
-                        <div>
-                            <input type="submit" value="Send Message" style="color: white;">                                
-                        </div>
-                    </form>
+                    <a href="https://github.com/xypatel" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:axaypatel.dev@gmail.com" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
                 </div>
-            </section>
-        </main>
-
-        <!--==================== FOOTER ====================-->
-        <footer class="footer">
-            <div class="footer__bg">
-                <div class="footer__container container grid">
-                    <div>
-                        <h1 class="footer__title">Axay</h1>
-                        <span class="footer__subtitle">apatel.org</span>
+            </div>
+            <div class="hero-visual">
+                <div class="code-window">
+                    <div class="window-header">
+                        <div class="window-buttons">
+                            <span class="btn-close"></span>
+                            <span class="btn-minimize"></span>
+                            <span class="btn-maximize"></span>
+                        </div>
+                        <span class="window-title">engineer.go</span>
                     </div>
-    
-                    <ul class="footer__links">
-                        <li>
-                            <a href="#about" class="footer__link">About</a>
-                        </li>
-                        <li>
-                            <a href="#skills" class="footer__link">Tech</a>
-                        </li>
-                        <li>
-                            <a href="#projects" class="footer__link">Projects</a>
-                        </li>
-                    </ul>
-    
-                    <div class="footer__socials">
-                        <a href="#surprise" class="footer__link">
-                            <i class="fas fa-dog" style="font-size: 2rem;"></i>
-                        </a>
-                        <a href="http://facebook.com/axay.patel.10441" target="_blank" class="footer__social">
-                            <i class="uil uil-facebook"></i>
-                        </a>
+                    <div class="window-content">
+                        <pre><code><span class="code-keyword">package</span> main
+
+<span class="code-keyword">import</span> (
+    <span class="code-string">"distributed-systems"</span>
+    <span class="code-string">"cloud-architecture"</span>
+    <span class="code-string">"microservices"</span>
+)
+
+<span class="code-keyword">type</span> Engineer <span class="code-keyword">struct</span> {
+    Name       <span class="code-type">string</span>
+    Role       <span class="code-type">string</span>
+    Location   <span class="code-type">string</span>
+    Skills     []<span class="code-type">string</span>
+}
+
+<span class="code-keyword">func</span> <span class="code-function">main</span>() {
+    axay := Engineer{
+        Name:     <span class="code-string">"Axay Patel"</span>,
+        Role:     <span class="code-string">"Senior SWE"</span>,
+        Location: <span class="code-string">"Dallas, TX"</span>,
+        Skills:   []<span class="code-type">string</span>{
+            <span class="code-string">"Go"</span>, <span class="code-string">"Java"</span>, <span class="code-string">"Python"</span>,
+            <span class="code-string">"AWS"</span>, <span class="code-string">"Kafka"</span>, <span class="code-string">"PostgreSQL"</span>,
+        },
+    }
+    axay.<span class="code-function">BuildAwesomeThings</span>()
+}</code></pre>
                     </div>
                 </div>
-                
-        </footer>
-        
-        <!--==================== SCROLL TOP ====================-->
-    
-        <!--==================== Font Awesom ====================-->
-        <script src="https://kit.fontawesome.com/53618dfd0f.js" crossorigin="anonymous"></script>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
 
-        <!--==================== SWIPER JS ====================-->
-        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-        
-        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-intro">
+                        I'm a Senior Software Engineer at Capital One with a passion for building robust, 
+                        scalable distributed systems. With expertise spanning cloud architecture, event-driven 
+                        microservices, and observability, I thrive on solving complex technical challenges.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div>
+                                <h3>Education</h3>
+                                <p>B.S. Computer Science & Engineering</p>
+                                <p class="subtitle">The Ohio State University</p>
+                                <p class="subtitle">Software Engineering & Information Security</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-briefcase"></i>
+                            <div>
+                                <h3>Current Role</h3>
+                                <p>Senior Associate Software Engineer</p>
+                                <p class="subtitle">Capital One - Dallas, TX</p>
+                                <p class="subtitle">Aug 2021 - Present</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-award"></i>
+                            <div>
+                                <h3>Certifications</h3>
+                                <p>AWS Solutions Architect</p>
+                                <p class="subtitle">Cloud Infrastructure & Design</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <!--==================== Animate on Scroll ====================-->
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <script>AOS.init();</script>
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>Senior Associate Software Engineer</h3>
+                                <p class="company">Capital One</p>
+                            </div>
+                            <span class="timeline-date">Aug 2022 - Present</span>
+                        </div>
+                        <div class="timeline-description">
+                            <p>Leading architecture and development of next-generation rewards processing systems and case management platforms serving millions of users.</p>
+                            <div class="tech-tags">
+                                <span class="tag">Go</span>
+                                <span class="tag">Python</span>
+                                <span class="tag">Kafka</span>
+                                <span class="tag">AWS Lambda</span>
+                                <span class="tag">PostgreSQL</span>
+                                <span class="tag">OpenTelemetry</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-        <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>Associate Software Engineer</h3>
+                                <p class="company">Capital One</p>
+                            </div>
+                            <span class="timeline-date">Aug 2021 - Aug 2022</span>
+                        </div>
+                        <div class="timeline-description">
+                            <p>Developed cloud-native financial services platforms with focus on batch processing, real-time streaming, and performance optimization.</p>
+                            <div class="tech-tags">
+                                <span class="tag">Java</span>
+                                <span class="tag">Spring Boot</span>
+                                <span class="tag">Scala</span>
+                                <span class="tag">Kafka</span>
+                                <span class="tag">AWS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>Software Engineer Intern</h3>
+                                <p class="company">Capital One</p>
+                            </div>
+                            <span class="timeline-date">Jun 2020 - Aug 2020</span>
+                        </div>
+                        <div class="timeline-description">
+                            <p>Implemented distributed tracing POC across microservices architecture, demonstrating value for company-wide adoption.</p>
+                            <div class="tech-tags">
+                                <span class="tag">OpenTelemetry</span>
+                                <span class="tag">Jaeger</span>
+                                <span class="tag">New Relic</span>
+                                <span class="tag">Angular</span>
+                                <span class="tag">Spring</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="category-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Languages</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">Java</span>
+                        <span class="skill-item">Go (Golang)</span>
+                        <span class="skill-item">Python</span>
+                        <span class="skill-item">TypeScript</span>
+                        <span class="skill-item">SQL</span>
+                        <span class="skill-item">Scala</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Cloud & Infrastructure</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">AWS</span>
+                        <span class="skill-item">Lambda</span>
+                        <span class="skill-item">Docker</span>
+                        <span class="skill-item">Kubernetes</span>
+                        <span class="skill-item">Terraform</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <h3>Architecture & Design</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">Distributed Systems</span>
+                        <span class="skill-item">Microservices</span>
+                        <span class="skill-item">Event-Driven Architecture</span>
+                        <span class="skill-item">Hexagonal Architecture</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Data & Messaging</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">Kafka</span>
+                        <span class="skill-item">PostgreSQL</span>
+                        <span class="skill-item">DynamoDB</span>
+                        <span class="skill-item">SQS/SNS</span>
+                        <span class="skill-item">Databricks</span>
+                        <span class="skill-item">Snowflake</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Frameworks & Tools</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">Spring Boot</span>
+                        <span class="skill-item">Node.js</span>
+                        <span class="skill-item">Angular</span>
+                        <span class="skill-item">Spring Batch</span>
+                        <span class="skill-item">Resilience4j</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Observability</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">OpenTelemetry</span>
+                        <span class="skill-item">New Relic</span>
+                        <span class="skill-item">Jaeger</span>
+                        <span class="skill-item">Prometheus</span>
+                        <span class="skill-item">Grafana</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
-        <!--==================== MAIN JS ====================-->
-        <script src="assets/js/main.js"></script>
-    </body>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy;Axay Patel.</p>
+                <div class="footer-links">
+                    <a href="https://linkedin.com/in/Axay-Patel" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/xypatel" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:axaypatel.dev@gmail.com" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
