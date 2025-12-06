@@ -17,11 +17,11 @@
         <div class="nav-container">
             <a href="#home" class="logo">AP</a>
             <div class="nav-links">
-                <a href="#home" class="nav-link">Home</a>
-                <a href="#about" class="nav-link">About</a>
-                <a href="#experience" class="nav-link">Experience</a>
-                <a href="#skills" class="nav-link">Skills</a>
-                <a href="#contact" class="nav-link">Contact</a>
+                <a href="#home" class="nav-link" data-text="Home">Home</a>
+                <a href="#about" class="nav-link" data-text="About">About</a>
+                <a href="#experience" class="nav-link" data-text="Experience">Experience</a>
+                <a href="#skills" class="nav-link" data-text="Skills">Skills</a>
+                <a href="#contact" class="nav-link" data-text="Contact">Contact</a>
             </div>
             <button class="mobile-menu-toggle" id="mobile-menu-toggle">
                 <span></span>
@@ -33,78 +33,142 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
+        <canvas id="particleCanvas"></canvas>
+        <div class="hero-background">
+            <div class="grid-overlay"></div>
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+        </div>
+        
         <div class="hero-content">
-            <div class="hero-text">
-                <p class="hero-greeting">Hi, I'm</p>
-                <h1 class="hero-name">Axay Patel</h1>
-                <h2 class="hero-title">Senior Software Engineer</h2>
-                <p class="hero-description">
-                    Specializing in distributed systems, cloud architecture, and event-driven microservices. 
-                    Building scalable solutions at Capital One.
+            <div class="hero-main">
+                <div class="name-container">
+                    <div class="name-background">
+                        <div class="name-glow"></div>
+                    </div>
+                    <h1 class="hero-name">
+                        <span class="name-line" data-text="Axay Patel">
+                            <span class="letter">A</span><span class="letter">x</span><span class="letter">a</span><span class="letter">y</span>
+                            <span class="letter space"> </span>
+                            <span class="letter">P</span><span class="letter">a</span><span class="letter">t</span><span class="letter">e</span><span class="letter">l</span>
+                        </span>
+                    </h1>
+                    <div class="name-accent-line"></div>
+                </div>
+                
+                <div class="hero-roles">
+                    <span class="role-item active">Senior Software Engineer</span>
+                    <span class="role-separator">×</span>
+                    <span class="role-item">Cloud Architect</span>
+                    <span class="role-separator">×</span>
+                    <span class="role-item">System Designer</span>
+                </div>
+                
+                <p class="hero-statement">
+                    Architecting distributed systems and event-driven platforms for financial services 
+                    at Capital One. Building large-scale microservices on AWS that power critical 
+                    <span class="highlight">enterprise applications</span>.
                 </p>
-                <div class="hero-cta">
-                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
-                    <a href="../assets/pdf/Alexa-Cv.pdf" target="_blank" class="btn btn-secondary">
-                        <i class="fas fa-download"></i> Resume
+                
+                <div class="hero-actions">
+                    <a href="#experience" class="btn btn-primary">
+                        <span>View Work</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="../assets/pdf/Alexa-Cv.pdf" target="_blank" class="btn btn-text">
+                        <span>Resume</span>
+                        <i class="fas fa-external-link-alt"></i>
                     </a>
                 </div>
-                <div class="social-links">
-                    <a href="https://linkedin.com/in/Axay-Patel" target="_blank" aria-label="LinkedIn">
+                
+                <div class="hero-stats">
+                    <div class="stat-item" data-count="5">
+                        <span class="stat-number counter">0</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number">Capital One</span>
+                        <span class="stat-label">Current Company</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number">Dallas, TX</span>
+                        <span class="stat-label">Location</span>
+                    </div>
+                </div>
+                
+                <!-- Floating Tech Icons -->
+                <div class="floating-icons">
+                    <div class="float-icon" style="--delay: 0s; --duration: 20s;">
+                        <i class="fab fa-java"></i>
+                    </div>
+                    <div class="float-icon" style="--delay: 2s; --duration: 25s;">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <div class="float-icon" style="--delay: 4s; --duration: 22s;">
+                        <i class="fab fa-aws"></i>
+                    </div>
+                    <div class="float-icon" style="--delay: 1s; --duration: 24s;">
+                        <i class="fab fa-docker"></i>
+                    </div>
+                    <div class="float-icon" style="--delay: 3s; --duration: 23s;">
+                        <i class="fab fa-node-js"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-side">
+                <div class="terminal-window">
+                    <div class="terminal-header">
+                        <div class="terminal-controls">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <span class="terminal-title">~/projects/distributed-systems</span>
+                    </div>
+                    <div class="terminal-body">
+                        <div class="terminal-line">
+                            <span class="prompt">$</span>
+                            <span class="command">cat expertise.txt</span>
+                        </div>
+                        <div class="terminal-output">
+                            <div class="output-line">
+                                <span class="output-label">Languages:</span>
+                                <span class="output-value">Go, Java, Python, TypeScript</span>
+                            </div>
+                            <div class="output-line">
+                                <span class="output-label">Cloud:</span>
+                                <span class="output-value">AWS (Lambda, ECS, DynamoDB)</span>
+                            </div>
+                            <div class="output-line">
+                                <span class="output-label">Messaging:</span>
+                                <span class="output-value">Kafka, SQS, SNS</span>
+                            </div>
+                            <div class="output-line">
+                                <span class="output-label">Observability:</span>
+                                <span class="output-value">OpenTelemetry, New Relic</span>
+                            </div>
+                        </div>
+                        <div class="terminal-line cursor-line">
+                            <span class="prompt">$</span>
+                            <span class="command">_</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-quick">
+                    <a href="https://linkedin.com/in/Axay-Patel" target="_blank" class="contact-link" aria-label="LinkedIn">
                         <i class="fab fa-linkedin"></i>
                     </a>
-                    <a href="https://github.com/xypatel" target="_blank" aria-label="GitHub">
+                    <a href="https://github.com/xypatel" target="_blank" class="contact-link" aria-label="GitHub">
                         <i class="fab fa-github"></i>
                     </a>
-                    <a href="mailto:axaypatel.dev@gmail.com" aria-label="Email">
+                    <a href="mailto:axaypatel.dev@gmail.com" class="contact-link" aria-label="Email">
                         <i class="fas fa-envelope"></i>
                     </a>
                 </div>
-            </div>
-            <div class="hero-visual">
-                <div class="code-window">
-                    <div class="window-header">
-                        <div class="window-buttons">
-                            <span class="btn-close"></span>
-                            <span class="btn-minimize"></span>
-                            <span class="btn-maximize"></span>
-                        </div>
-                        <span class="window-title">engineer.go</span>
-                    </div>
-                    <div class="window-content">
-                        <pre><code><span class="code-keyword">package</span> main
-
-<span class="code-keyword">import</span> (
-    <span class="code-string">"distributed-systems"</span>
-    <span class="code-string">"cloud-architecture"</span>
-    <span class="code-string">"microservices"</span>
-)
-
-<span class="code-keyword">type</span> Engineer <span class="code-keyword">struct</span> {
-    Name       <span class="code-type">string</span>
-    Role       <span class="code-type">string</span>
-    Location   <span class="code-type">string</span>
-    Skills     []<span class="code-type">string</span>
-}
-
-<span class="code-keyword">func</span> <span class="code-function">main</span>() {
-    axay := Engineer{
-        Name:     <span class="code-string">"Axay Patel"</span>,
-        Role:     <span class="code-string">"Senior SWE"</span>,
-        Location: <span class="code-string">"Dallas, TX"</span>,
-        Skills:   []<span class="code-type">string</span>{
-            <span class="code-string">"Go"</span>, <span class="code-string">"Java"</span>, <span class="code-string">"Python"</span>,
-            <span class="code-string">"AWS"</span>, <span class="code-string">"Kafka"</span>, <span class="code-string">"PostgreSQL"</span>,
-        },
-    }
-    axay.<span class="code-function">BuildAwesomeThings</span>()
-}</code></pre>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="scroll-indicator">
-            <div class="mouse">
-                <div class="wheel"></div>
             </div>
         </div>
     </section>
@@ -112,40 +176,63 @@
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p class="about-intro">
-                        I'm a Senior Software Engineer at Capital One with a passion for building robust, 
-                        scalable distributed systems. With expertise spanning cloud architecture, event-driven 
-                        microservices, and observability, I thrive on solving complex technical challenges.
+            <div class="about-header">
+                <span class="section-label">Background</span>
+                <h2 class="section-title-left">Building scalable systems<br/>that matter</h2>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-main">
+                    <p class="about-lead">
+                        As a Senior Software Engineer at Capital One, I architect and build distributed 
+                        systems for financial services platforms, working across multiple domains and 
+                        business verticals.
                     </p>
-                    <div class="about-highlights">
-                        <div class="highlight-item">
-                            <i class="fas fa-graduation-cap"></i>
-                            <div>
-                                <h3>Education</h3>
-                                <p>B.S. Computer Science & Engineering</p>
-                                <p class="subtitle">The Ohio State University</p>
-                                <p class="subtitle">Software Engineering & Information Security</p>
-                            </div>
+                    <p class="about-body">
+                        My work spans the full spectrum of modern backend engineering—from designing 
+                        event-driven architectures to optimizing cloud infrastructure. I specialize in 
+                        building scalable microservices that handle high-throughput transaction processing 
+                        and real-time data streaming.
+                    </p>
+                    <p class="about-body">
+                        I'm passionate about system reliability, observability, and architecting solutions 
+                        that balance performance with maintainability. My approach emphasizes clean architecture 
+                        patterns and comprehensive monitoring to ensure systems remain resilient at scale.
+                    </p>
+                </div>
+                
+                <div class="about-sidebar">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-university"></i>
                         </div>
-                        <div class="highlight-item">
-                            <i class="fas fa-briefcase"></i>
-                            <div>
-                                <h3>Current Role</h3>
-                                <p>Senior Associate Software Engineer</p>
-                                <p class="subtitle">Capital One - Dallas, TX</p>
-                                <p class="subtitle">Aug 2021 - Present</p>
-                            </div>
+                        <div class="info-content">
+                            <h4>Education</h4>
+                            <p>B.S. Computer Science & Engineering</p>
+                            <span class="info-meta">The Ohio State University</span>
+                            <span class="info-meta">Software Engineering · InfoSec · Business</span>
                         </div>
-                        <div class="highlight-item">
-                            <i class="fas fa-award"></i>
-                            <div>
-                                <h3>Certifications</h3>
-                                <p>AWS Solutions Architect</p>
-                                <p class="subtitle">Cloud Infrastructure & Design</p>
-                            </div>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Location</h4>
+                            <p>Dallas, Texas</p>
+                            <span class="info-meta">Central Time Zone (UTC-6)</span>
+                        </div>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Certifications</h4>
+                            <p>AWS Solutions Architect</p>
+                            <span class="info-meta">Cloud Architecture & Design</span>
                         </div>
                     </div>
                 </div>
@@ -169,7 +256,7 @@
                             <span class="timeline-date">Aug 2022 - Present</span>
                         </div>
                         <div class="timeline-description">
-                            <p>Leading architecture and development of next-generation rewards processing systems and case management platforms serving millions of users.</p>
+                            <p>Leading architecture and development for rewards processing and case management platforms in the financial services domain.</p>
                             <div class="tech-tags">
                                 <span class="tag">Go</span>
                                 <span class="tag">Python</span>
@@ -193,7 +280,7 @@
                             <span class="timeline-date">Aug 2021 - Aug 2022</span>
                         </div>
                         <div class="timeline-description">
-                            <p>Developed cloud-native financial services platforms with focus on batch processing, real-time streaming, and performance optimization.</p>
+                            <p>Developed cloud-native platforms for auto loans servicing, focusing on batch processing and real-time streaming systems.</p>
                             <div class="tech-tags">
                                 <span class="tag">Java</span>
                                 <span class="tag">Spring Boot</span>
@@ -216,7 +303,7 @@
                             <span class="timeline-date">Jun 2020 - Aug 2020</span>
                         </div>
                         <div class="timeline-description">
-                            <p>Implemented distributed tracing POC across microservices architecture, demonstrating value for company-wide adoption.</p>
+                            <p>Implemented distributed tracing proof-of-concept across microservices architecture for observability platform evaluation.</p>
                             <div class="tech-tags">
                                 <span class="tag">OpenTelemetry</span>
                                 <span class="tag">Jaeger</span>
